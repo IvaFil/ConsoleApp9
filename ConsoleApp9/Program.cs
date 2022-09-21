@@ -10,7 +10,20 @@ namespace ConsoleApp9
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введи число: ");
+            int A = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Введи степень: ");
+            int B = Convert.ToInt32(Console.ReadLine());
+
+            int res = A;
+
+            for (int i = 1; i < B; i++)
+            {
+
+                A *= res;
+            }
+            Console.WriteLine(A);
         }
     }
 }
