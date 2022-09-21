@@ -11,19 +11,21 @@ namespace ConsoleApp9
         static void Main(string[] args)
         {
             Console.WriteLine("Введи число: ");
-            int A = Convert.ToInt32(Console.ReadLine());
+            int number = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введи степень: ");
-            int B = Convert.ToInt32(Console.ReadLine());
+            int sum = 0;
 
-            int res = A;
-
-            for (int i = 1; i < B; i++)
+            for (; number >0; number/=10)
             {
+                sum += number % 10;
+               
 
-                A *= res;
             }
-            Console.WriteLine(A);
+
+
+            Console.WriteLine(sum);
+
+
         }
     }
 }
