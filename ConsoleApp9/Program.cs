@@ -10,22 +10,16 @@ namespace ConsoleApp9
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введи число: ");
-            int number = Convert.ToInt32(Console.ReadLine());
+           int[]arr=new int[8];
 
-            int sum = 0;
-
-            for (; number >0; number/=10)
+            for (int i = 0; i < arr.Length; i++)
             {
-                sum += number % 10;
-               
-
+                arr[i] = new Random().Next(0, 101);
             }
-
-
-            Console.WriteLine(sum);
-
-
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
         }
     }
 }
